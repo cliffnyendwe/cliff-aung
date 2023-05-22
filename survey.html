@@ -8,8 +8,49 @@
     <p id="description">Thank you for taking the time to help us improve the platform.
   </body>
   <form id="survey-form">
-    <input id="name" type="text" placeholder="Name" required>
-    <input id="email" type="email" placeholder="Email" required>
-    <input id="number" type="number" placeholder="Numberrr" min="0" max="10">
+    <label id="name-label">Name</label>
+    <input id="name" type="text" placeholder="Enter your name" required>
+    <label id="email-label">Email</label>
+    <input id="email" type="email" placeholder="Enter your name" required>
+    <label id="number-label">Age(optional)</label>
+    <input id="number" type="number" min="0" max="10" placeholder="Age">
+
+
+    <label id="occuptions-label">What is your current occuptions?</label>
+    <select name="occuptions" id="dropdown">
+        <option selected disabled>Select current job </option>
+        <option value="Teacher">Teacher</option>
+        <option value="Driver">Driver</option>
+    </select>
+
+
+    <label id="language-label">What is your favourite language?</label>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label>
+
+
+    <label id="food-label">What is your favourite food?</label>
+    <input type="radio"name="fav_food" value="orange">
+    <label for="orange">HTML</label><br>
+    <input type="radio" name="fav_food" value="Apple">
+    <label for="Apple">CSS</label><br>
+    <input type="radio" name="fav_food" value="Banana">
+    <label for="Banana">JavaScript</label>
+
+    
+    <label id="furture-label">What do you want to be in next two years?</label>
+    <input type="checkbox" id="front-end_developer" value="front-end_developerfront-end_developer">
+    <label for="front-end_developer">Front-end Developer</label><br>
+    <input type="checkbox" id="back-end_developer" value="back-end_developer">
+    <label for="back-end_developer">Back-end Developer</label><br>
+    <input type="checkbox" id="data-analyst" value="data-analyst">
+    <label for="data-analyst">Data Analyst</label><br>
+
+    <textarea id="comment"></textarea>
+    <button type="submit" id="submit">Submit</button>
   </form>
 </html>
